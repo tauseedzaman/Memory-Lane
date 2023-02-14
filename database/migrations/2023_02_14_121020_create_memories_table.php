@@ -22,7 +22,6 @@ return new class extends Migration
             $table->longText("Description");
             $table->enum("status",["published","draft"]);
             $table->enum("Visibility",["public","private","friends-only"]);
-            $table->text("tags")->nullable();
             $table->timestamps();
         });
     }

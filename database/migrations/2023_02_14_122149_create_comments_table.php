@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->uuid("uuid");
             $table->foreignId("user_id")->constrained()->cascadeOnDelete();
+            $table->foreignId("memory_id")->constrained()->cascadeOnDelete();
             $table->text("text");
             $table->enum("status", ["published", "deleted"]);
             $table->timestamps();

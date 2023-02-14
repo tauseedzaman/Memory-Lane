@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Memory extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        "uuid",
+        "user_id",
+        "title",
+        "location",
+        "description",
+        "status",
+        "bisibility",
+    ];
 }
